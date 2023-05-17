@@ -1,39 +1,60 @@
-    *{
+*{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0 , 0;
+    padding: 0 , 0;
     }
     header {
         background-color: #2f3640;
         padding: 16px 0 ;
     }
+
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    header li {
+        display: inline;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin left: 22px;
+    }
+    header li a {
+        color: white;
+        text-decoration:none;
+    }
     h1 {
-        color:blue
+        color: white
     }
     #Entreterimento h2 {
-        color: violet
+        color: red
+    
     }
     #tec h2 {
         color: gold;
     }
 
+    #esportes h2 {
+        color: blue;
+    }
+
+    #economia h2 {
+        color: green;
+    }
     .container {
         width: 1366px;
         margin: 0 auto;
     }
-    .articles {
-        display: flex;
-        display: inline;
-        justify-content: space-between;
-    }
+
 
     .articles img {
-        height: 180px;
+        height: 360px;
     
     }
 
     .articles {
-        width: 30%;
+        width: 40%;
     
     }
 
@@ -43,10 +64,55 @@
 
     .articles p {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .articles h2 {
         font-size: 24px;
     }
+
+    .articles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #Entreterimento {
+        background-color: rgb(139, 89, 89)
+    }
+
+    #tec {
+        background-color: rgb(134, 134, 87);
+    }
     
+    #esportes {
+        background-color: rgb(88, 88, 167);
+    }
+
+    #economia {
+        background-color: rgb(42, 68, 42);
+    }
+    header #tecc{
+        background-color: rgb(170, 150, 37);
+        color: white;
+        padding: 8px;
+        display: inline-block;
+    }
+    header #ent {
+        background-color: rgb(179, 58, 58);
+        color: white;
+        padding: 8px;
+        display: inline-block;
+    }
+    header #esp {
+        background-color: rgb(57, 57, 170);
+        color: white;
+        padding: 8px;
+        display: inline-block;
+    }
+    header #econ {
+        background-color: rgb(57, 133, 57);
+        color: white;
+        padding: 8px;
+        display: inline-block;
+    }
