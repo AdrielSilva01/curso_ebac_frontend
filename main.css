@@ -1,52 +1,43 @@
-    *{
-    box-sizing: border-box;
+*{
     margin: 0;
     padding: 0;
-    }
-    header {
-        background-color: #2f3640;
-        padding: 16px 0 ;
-    }
-    h1 {
-        color:blue
-    }
-    #Entreterimento h2 {
-        color: violet
-    }
-    #tec h2 {
-        color: gold;
-    }
+    box-sizing: border-box;
+    font-family: roboto , sans-serif;
+}
 
-    .container {
-        width: 1366px;
-        margin: 0 auto;
-    }
-    .articles {
-        display: flex;
-        display: inline;
-        justify-content: space-between;
-    }
+header {
+    background-color: rgb(57, 57, 143);
+    padding: 16px 0;
+    color: white;
+    display: flex;
+    font-style: italic;
+}
+form h2 {
+    margin-bottom: 16px;
+}
 
-    .articles img {
-        height: 180px;
-    
-    }
+form {
+    background-color: rgb(87, 83, 83);
+    padding: 16PX;
+    text-align: center;
+}
+input, button {
+    padding: 8px;
+}
+button {
+    background-color: rgb(11, 80, 11);
+    border: none;
+    cursor: bold;
+    text-transform: uppercase;
+    color: white;
+}
+.concluido {
+    text-decoration:
+    line-through;
+}
+ul {
+    margin: 16px;
+    padding: 16px ;
+    box-sizing: border-box;
 
-    .articles {
-        width: 30%;
-    
-    }
-
-    section h2 {
-        margin-bottom: 16px;
-    }
-
-    .articles p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
-    }
-
-    .articles h2 {
-        font-size: 24px;
-    }
-    
+}
