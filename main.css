@@ -1,52 +1,49 @@
-    *{
-    box-sizing: border-box;
+* {
     margin: 0;
     padding: 0;
-    }
-    header {
-        background-color: #2f3640;
-        padding: 16px 0 ;
-    }
-    h1 {
-        color:blue
-    }
-    #Entreterimento h2 {
-        color: violet
-    }
-    #tec h2 {
-        color: gold;
-    }
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+    background-color: #192a56;
+    padding: 16px 0;
+    color: #fff;
+}
+.form-campo {
+    margin-bottom: 16px;
+}
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+.form-campo input {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
 
-    .container {
-        width: 1366px;
-        margin: 0 auto;
-    }
-    .articles {
-        display: flex;
-        display: inline;
-        justify-content: space-between;
-    }
+form {
+    max-width: 360px;
+}
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+form button {
+    max-width: 132px;
+}
 
-    .articles img {
-        height: 180px;
-    
-    }
-
-    .articles {
-        width: 30%;
-    
-    }
-
-    section h2 {
-        margin-bottom: 16px;
-    }
-
-    .articles p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
-    }
-
-    .articles h2 {
-        font-size: 24px;
-    }
-    
