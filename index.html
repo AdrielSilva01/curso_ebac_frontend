@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Tarefas</title>
+    <style>
+        .completed {
+        text-decoration: line-through;
+        }
+    </style>
+    </head>
+    <body>
+    <h1>Lista de Tarefas</h1>
+    
+    <form id="taskForm">
+        <input type="text" id="taskInput" placeholder="Digite uma tarefa">
+        <input type="submit" value="Adicionar Tarefa">
+    </form>
+    
+    <ul id="taskList">
+        <!-- Tarefas serão adicionadas aqui -->
+    </ul>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        // Adicionar tarefa ao submeter o formulário
+        $('#taskForm').submit(function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            var taskName = $('#taskInput').val();
+            if (taskName.trim() !== '') { // Verifica se o nome da tarefa não está vazio
+            var listItem = $('<li>' + taskName + '</li>');
+            $('#taskList').append(listItem);
+            $('#taskInput').val(''); // Limpa o campo de entrada
+            }
+        });
+        
+        // Aplicar efeito de linha ao clicar em um item da lista
+        $('#taskList').on('click', 'li', function() {
+            $(this).toggleClass('completed');
+        });
+        });
+    </script>
+</body>
+</html>
