@@ -1,52 +1,50 @@
-    *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    }
-    header {
-        background-color: #2f3640;
-        padding: 16px 0 ;
-    }
-    h1 {
-        color:blue
-    }
-    #Entreterimento h2 {
-        color: violet
-    }
-    #tec h2 {
-        color: gold;
-    }
+body {
+    font-family: Roboto, sans-serif;
+}
 
-    .container {
-        width: 1366px;
-        margin: 0 auto;
-    }
-    .articles {
-        display: flex;
-        display: inline;
-        justify-content: space-between;
-    }
+.navbar {
+    background-color: blue;
+}
 
-    .articles img {
-        height: 180px;
-    
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: blue;
+}
+#cabecalho .nav .nav-link,
+.navbar-brand
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: #fff;
+}
+.navbar-toggler {
+    background-color: #fff;
+}
+.section-title {
+    font-family: pacifico, cursive;
+}
+#sobre-o-restaurante, #cardapio {
+    background-color: rgb(47, 47, 71);
+}
+.text-colored {
+    color: blue;
+}
+.nav-cardapio .nav-link.active,
+#contato button  {
+    background-color: blue;
+    color: #fff;
+}
+.nav-cardapio .nav-link:hover {
+    color: blue;
+}
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+.social-links a {
+    text-decoration: none;
+} 
+@media (max-width: 767px) {
+    .carousel-item img{
+        height: 280px;
     }
-
-    .articles {
-        width: 30%;
-    
-    }
-
-    section h2 {
-        margin-bottom: 16px;
-    }
-
-    .articles p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
-    }
-
-    .articles h2 {
-        font-size: 24px;
-    }
-    
+}
