@@ -1,50 +1,38 @@
-body {
-    font-family: Roboto, sans-serif;
-}
-
-.navbar {
-    background-color: blue;
-}
-
-#cabecalho .nav .nav-link.active {
-    background-color: #fff;
-    color: blue;
-}
-#cabecalho .nav .nav-link,
-.navbar-brand
-.navbar-brand:hover,
-.nav-cardapio .nav-link.active:hover {
-    color: #fff;
-}
-.navbar-toggler {
-    background-color: #fff;
-}
-.section-title {
-    font-family: pacifico, cursive;
-}
-#sobre-o-restaurante, #cardapio {
-    background-color: rgb(47, 47, 71);
-}
-.text-colored {
-    color: blue;
-}
-.nav-cardapio .nav-link.active,
-#contato button  {
-    background-color: blue;
-    color: #fff;
-}
-.nav-cardapio .nav-link:hover {
-    color: blue;
-}
-.social-links li {
-    list-style: none;
-    display: inline;
-}
-.social-links a {
-    text-decoration: none;
-} 
-@media (max-width: 767px) {
-    .carousel-item img{
-        height: 280px;
+form {
+    max-width: 400px;
+    margin: 0 auto;
     }
-}
+    form .form-group {
+    margin-bottom: 1.5rem;
+    }
+    form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+    }
+    form input[type=text],
+    form input[type=email],
+    form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #6c757d;
+    border-radius: 0.25rem;
+    transition: border-color 0.2s;
+    }
+    form input[type=text]:focus,
+    form input[type=email]:focus,
+    form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    }
+    form textarea {
+    resize: vertical;
+    }
+    form button {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    }
+
+
