@@ -1,50 +1,67 @@
+.marginbottom8 {
+  margin-bottom: 8px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
 body {
-    font-family: Roboto, sans-serif;
+  background-color: #273c75;
+  color: #fff;
 }
-
-.navbar {
-    background-color: blue;
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
 }
-
-#cabecalho .nav .nav-link.active {
-    background-color: #fff;
-    color: blue;
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
 }
-#cabecalho .nav .nav-link,
-.navbar-brand
-.navbar-brand:hover,
-.nav-cardapio .nav-link.active:hover {
-    color: #fff;
+@media (max-width: 767px) {
+  .container {
+    max-width: 70%;
+  }
 }
-.navbar-toggler {
-    background-color: #fff;
+header {
+  padding: 24px;
 }
-.section-title {
-    font-family: pacifico, cursive;
+header .profile-avatar {
+  display: block;
+  margin: 0 auto 24px;
+  border-radius: 50%;
 }
-#sobre-o-restaurante, #cardapio {
-    background-color: rgb(47, 47, 71);
+.profile-bio {
+  text-align: center;
 }
-.text-colored {
-    color: blue;
+.profile-bio-name {
+  font-size: 16px;
+  margin-bottom: 8px;
 }
-.nav-cardapio .nav-link.active,
-#contato button  {
-    background-color: blue;
-    color: #fff;
+.profile-bio-subtitle {
+  font-size: 14px;
+  margin-bottom: 8px;
 }
-.nav-cardapio .nav-link:hover {
-    color: blue;
+.profile-bio-description {
+  font-size: 14px;
+  opacity: 0.7;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 240px;
+  width: 100%;
+  margin: 0 auto;
 }
 .social-links li {
-    list-style: none;
-    display: inline;
+  list-style: none;
 }
-.social-links a {
-    text-decoration: none;
-} 
-@media (max-width: 767px) {
-    .carousel-item img{
-        height: 280px;
-    }
+.social-links li img {
+  transition: all ease 0.3S;
+}
+.social-links li img:hover {
+  transform: scale(1.3);
 }
